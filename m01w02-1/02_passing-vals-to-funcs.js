@@ -1,12 +1,34 @@
-const myNum = 10;
+// const myNum = 10;
 
-const changeMyNum = function(num) {
-  num = 20;
-  console.log('the num is', num);
+// let copy = myNum;
+// copy = null;
+
+// const changeMyNum = function(num) {
+//   num = 20;
+//   console.log('the num is', num);
+// };
+
+// console.log(myNum); // 10
+
+// changeMyNum(myNum);
+
+// console.log(myNum); // 10
+
+
+const myDinosaur = {
+  species: 'T Rex',
+  colour: 'mottled grey feathers'
 };
 
-console.log(myNum); // 10
+console.log(myDinosaur);
 
-changeMyNum(myNum);
+const changeMyObject = function(obj) {
+  obj.species = 'triceratops';
+  console.log('inside the function', obj);
+};
 
-console.log(myNum); // 10
+changeMyObject(myDinosaur);
+
+console.log(myDinosaur);
+
+
