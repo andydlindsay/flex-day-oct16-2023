@@ -1,0 +1,22 @@
+{
+  "name": "testing-with-mocha",
+  "version": "3.0.0",
+  "description": "fun with mocha and testing",
+  "main": "say-hello-test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "testing",
+    "fun",
+    "tdd"
+  ],
+  "author": "Andy",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  },
+  "dependencies": {
+    "morgan": "^1.10.0"
+  }
+}
