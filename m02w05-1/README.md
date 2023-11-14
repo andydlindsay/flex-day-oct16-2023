@@ -5,62 +5,28 @@
 - [x] TCP introduction
 - [x] TCP demo
 
-### Networking
-* two machines being able to communicate with each other
+### What is networking?
+- Communication between machines on a network
 
-### Internet Protocol (IP)
-* each computer on the network has a unique address
-* similar to a street address
-  * IPv4 127.0.0.1 192.168.0.192
-  * IPv6 2001:db8:3333:4444:5555:6666:7777:8888
-
-### Port
-* is the unique indentifier of a particular application on the machine
-* apartment numbers
-* 65,535 ports to choose from
-  * <1000 reserved for the system
-  * 3000 - 8000 for development ports
-  * 80 HTTP
-  * 443 HTTP
-  * 22 SSH
-  * 5432 Postgres
-
-* Clients -> want something
-* Servers -> has something
+### What is a protocol?
+- A defined standard for how requests and responses are sent between network devices
 
 ### Transport Layer Protocols
-* all packages are the same size
-* break all communication down into packets
-* packets have headers => where is it going, where is it from
+- Break data into packets to be sent over the network layer
+- Give each packet a header with origin and destination
+- **UDP**: **U**ser **D**atagram **P**rotocol
+  - Smaller header size (8 bytes) which results in smaller packet sizes
+  - _Connectionless_ ie. there is no need to establish or maintain a connection
+  - No error recovery (any corrupted packets are discarded)
+  - Packets can arrive in any order
+  - Useful for streaming/low latency applications
+- **TCP**: **T**ransmission **C**ontrol **P**rotocol
+  - Larger header size (20 bytes)
+  - Requires a connection (3-way handshake)
+  - Corrupted packets are reported to the server and are re-sent
+  - Packets arrive in order
+  - Useful when guaranteed communication is needed
 
-### TCP
-* Transmission Control Protocol
-* requires a connection (3-way handshake)
-* any corrupted/missing packets are re-sent
-* packets are guaranteed to arrive in order
-* useful when communicated needs to be guaranteed
-
-### UDP
-* User Datagram Protocol
-* connectionless
-* missing packets are lost
-* packets can arrive in any order
-* low latency applications
-
-### Event-Driven Programming
-* register a function to be called when a specific event occurs
-
-
-"Move: up"
-"Name: xyz"
-
-
-
-
-
-
-
-
-
-
-
+### Useful Links
+* [OSI Model](https://en.wikipedia.org/wiki/OSI_model)
+* [Net package documentation](https://nodejs.org/api/net.html)
