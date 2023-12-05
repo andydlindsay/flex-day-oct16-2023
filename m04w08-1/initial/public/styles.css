@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+main > p {
+  color: orange;
+  color: purple;
+  font-size: 28px;
+
+  padding: 25px 10px 10px 5px;
+  padding: 25px 10px;
+  padding: 25px;
+  /* TRBL */
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
