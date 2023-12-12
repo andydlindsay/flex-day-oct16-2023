@@ -2,14 +2,35 @@ body {
   padding: 20px;
 }
 
-header {
+.main-header {
   display: flex;
   justify-content: center;
 }
 
-header > h2 {
+.main-header > h2 {
   color: brown;
   font-size: 2.5em;
   text-decoration: underline;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.food-item {
+  border: 2px solid lightsalmon;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.food-item header {
+  display: flex;
+  color: orangered;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.food-item footer {
+  justify-content: space-between;
+  display: flex;
+  margin-top: 15px;
+  color: brown;
 }
