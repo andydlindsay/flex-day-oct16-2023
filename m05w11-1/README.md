@@ -74,7 +74,7 @@ For the rest of the queries, we'll be using the `albums` and `songs` tables.
 
 ```
 
-10. List albums along with average song rating
+10. List albums and songs with rating higher than album average
 
 ```sql
 
