@@ -10,6 +10,32 @@
 - [ ] Aggregation functions
 - [ ] `LIMIT` and `OFFSET`
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### SELECT Challenges
 
 For the first 5 queries, we'll be using the `users` table.
