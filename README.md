@@ -9,3 +9,4 @@
 * [M04W08 - Intro to CSS](/m04w08-1)
 * [M04W09 - AJAX](/m04w09-1)
 * [M05W11 - SQL Intro](/m05w11-1)
+* [M05W12 - SQL from our Apps](/m05w12-1)
