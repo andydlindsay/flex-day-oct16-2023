@@ -24,14 +24,20 @@ client.connect();
  * @return {Promise<{}>} A promise to the user.
  */
 const getUserWithEmail = function (email) {
-  let resolvedUser = null;
-  for (const userId in users) {
-    const user = users[userId];
-    if (user?.email.toLowerCase() === email?.toLowerCase()) {
-      resolvedUser = user;
-    }
-  }
-  return Promise.resolve(resolvedUser);
+  // let resolvedUser = null;
+  // for (const userId in users) {
+  //   const user = users[userId];
+  //   if (user?.email.toLowerCase() === email?.toLowerCase()) {
+  //     resolvedUser = user;
+  //   }
+  // }
+  // return Promise.resolve(resolvedUser);
+
+  return client.query('SELECT * FROM users WHERE email = $1;', [email?.toLowerCase()])
+    .then((response) => {
+      const user = response.rows[0];
+      return user;
+    });
 };
 
 /**

@@ -3,6 +3,14 @@ const database = require("../db/database");
 
 const router = express.Router();
 
+// router.use((req, res, next) => {
+//   if (!req.cookies.user_id) {
+//     return res.redirect('/login');
+//   }
+
+//   next();
+// });
+
 router.get("/properties", (req, res) => {
   database
     .getAllProperties(req.query, 20)
