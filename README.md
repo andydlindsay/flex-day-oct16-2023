@@ -11,3 +11,4 @@
 * [M05W11 - SQL Intro](/m05w11-1)
 * [M05W12 - SQL from our Apps](/m05w12-1)
 * [M05W13 - LightBnB Q&A](/m05w13-1)
+* [M07W16 - JSX and Props](/m07w16-1)
