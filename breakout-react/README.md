@@ -1,10 +1,9 @@
 # BREAKOUT - React
 
 ### To Do
-* [ ] Data Fetching
-* [ ] Custom Hooks
-* [ ] useReducer Review
-* [ ] React Router [stretch]
+* [x] Data Fetching
+* [x] Custom Hooks
+* [x] useReducer Review
 * [ ] Questions?
 
 
