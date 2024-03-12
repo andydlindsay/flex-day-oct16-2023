@@ -1,0 +1,28 @@
+const highScores = [
+  {
+    id: 1,
+    name: 'Alice',
+    points: 15,
+  },
+  {
+    id: 2,
+    name: 'Bob',
+    points: 10,
+  },
+  {
+    id: 3,
+    name: 'Carol',
+    points: 5,
+  },
+];
+
+const axios = {
+  get: (url) => {
+    if (url === '/high-scores') {
+      // return new Promise((resolve, reject) => {})
+      return Promise.resolve({ data: highScores});
+    }
+  }
+};
+
+export default axios;
