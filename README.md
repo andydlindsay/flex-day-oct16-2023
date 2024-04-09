@@ -20,3 +20,4 @@
 * [M08W21 - Real World React (Advanced Topics)](/m08w21-1)
 * [M09W22 - Intro to Ruby](/m09w22-1)
 * [M09W23 - Project Planning](/m09w23-1)
+* [M09W24 - Rails Review](/m09w24-1)
