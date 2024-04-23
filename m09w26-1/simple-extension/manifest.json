@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "A Simple Extension",
+  "version": "1.0.0",
+  "action": {
+    "default_icon": "images/icon.png",
+    "default_popup": "popup/popup.html",
+    "default_title": "A fancy extension"
+  },
+  "options_page": "options/options.html",
+  "permissions": [
+    "storage",
+    "alarms",
+    "notifications"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"],
+      "css": ["content-styles.css"]
+    }
+  ]
+}
